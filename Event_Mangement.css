@@ -1,0 +1,669 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* header for email and location */
+#header{
+    display: flex;
+    background-color: rgb(207, 207, 207);
+    height: 31px;
+    margin: 1px 0px;
+    width: 100%;
+}
+#header .email_img{
+    margin: 4px 0px 5px 137px;
+    cursor: pointer;
+}
+#header .location_img{
+    margin: 2px 0px 3px 83px ;
+    cursor: pointer;
+}
+#header .header_content_1{
+    font-size: 20px;
+    margin: 4px 4px 0px 3px;
+    padding: 2px 3px 2px 2px;
+    font-family: 'Ceviche One', cursive;
+}
+#header .header_content_2{
+    font-size: 20px;
+    margin: 4px 2px 3px 2px;
+    padding: 2px 3px 2px 2px;
+    font-family: 'Ceviche One', cursive;
+}
+#header .header_content_3{
+    font-size: 25px;
+    margin: 2px 6px 9px 102px;
+    padding: 3px 5px 4px 13px;
+    font-family: 'Ceviche One', cursive;
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------- */
+/* NAVBAR */
+#navbar{
+    display: flex;
+    height: 96px;
+    width: 100%;
+    /* align-items: center;
+    justify-content: center; */
+}
+#navbar img{
+    height: 63px;
+    width: 76px;
+    margin: 16px 13px 15px 90px;
+}
+#navbar ul{
+    display: flex;
+    margin: 28px 14px 27px 24px;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 15px;
+}
+#navbar ul li a.item{
+    display: block;
+    color:black;
+    padding: 9px 12px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-family: 'Architects Daughter', cursive;
+}
+#navbar ul li a.item:hover{
+    color: tomato;
+}
+
+/* DROPDPWN SERVICES */
+#navbar .services{
+    display: inline-block;
+}
+#navbar .services_dropdown{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0px -2px 5px 0px red;
+    margin: 4px 0px 0px 13px;
+    padding: 0px 0px 0px 0px;
+}
+#navbar .services_dropdown a{
+    color: black;
+    padding: 8px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-top: 1px solid tomato;
+}
+#navbar .services_dropdown a:hover{
+  color: black;
+  font-family: 'Architects Daughter', cursive;
+  background: tomato;
+}
+#navbar .services:hover .services_dropdown{
+    display: block;
+    font-family: 'Architects Daughter', cursive;
+}
+#navbar .services .item , #navbar .event .item{
+    /* margin-bottom: 50px; */
+    padding-bottom: 36px;
+}
+/* DROPDPWN EVENTS */
+#navbar .event{
+    display: inline-block;
+}
+#navbar .event_dropdown{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0px -2px 5px 0px red;
+    margin: 3px 0px 0px 13px;
+    padding: 0px 0px 0px 0px;
+}
+#navbar .event_dropdown a{
+    color: black;
+    padding: 8px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid tomato;
+}
+#navbar .event_dropdown a:hover{
+  color: black;
+  font-family : 'Architects Daughter', cursive;
+  background: tomato;
+}
+#navbar .event:hover .event_dropdown{
+    display: block;
+    font-family: 'Architects Daughter', cursive;
+}
+/* ---------------------------------------------------------- */
+
+#body_first{
+    position: relative;
+}
+#body_first::before{
+    content: "";
+    background: url(body1.jpg) no-repeat center center/cover;
+    position: absolute;
+    height:252%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.999;
+    animation:slider 10s infinite ease;
+    /* animation-delay: 5s; */
+    /* animation-timing-function: ease-in-out; */
+    animation-duration: 20s;
+}
+@keyframes slider {
+   0% {background-image: url(body1.jpg);  background-size: 100% 100%;}
+
+   30% {background-image: url(body2.jpg);  background-size: 100% 100%;}
+
+   60% {background-image: url(body3.jpg);  background-size: 100% 100%;}
+}
+#body_first h1{
+   margin: 0px 0px 0px 93px;
+   font-size: 40px;
+   color: white;
+   font-family: 'Architects Daughter', cursive;
+}
+#body_first .bodyfirst_content{
+    margin: 0px 0px 0px 150px;
+    display: flex;
+}
+
+#body_first .bodyfirst_content .aboutus{
+    color: tomato;
+    margin: 0px 0px 0px 34px;
+    padding: 0px 0px -1px 15px;
+    font-size: 23px;
+    border: 4px solid white;
+    background: white;
+    font-family: 'Fruktur', cursive;
+    text-align: center;
+}
+#body_first .bodyfirst_content .aboutus:hover{
+    color: white;
+    background: tomato;
+    border: 4px solid tomato;
+    cursor: pointer;
+}
+#body_first .bodyfirst_content .locateus{
+    color: white;
+    margin: 0px 0px 0px 34px;
+    padding: 0px 0px -1px 15px;
+    font-size: 23px;
+    border: 4px solid tomato;
+    background: tomato;
+    font-family: 'Fruktur', cursive;
+    text-align: center;
+}
+#body_first .bodyfirst_content .locateus:hover{
+    color: tomato ;
+    background: white;
+    border: 4px solid white;
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+
+/* our services */
+
+#our-services{
+    position: relative;
+    font-size: 40px;
+    padding-bottom: 20px;
+    letter-spacing: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 550px;
+}
+#our-services .services{
+    color: tomato;
+}
+#our-services::before{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 76px;
+    height: 2px;
+    margin-left: -388px;
+    background: #fa334f;
+    content: '';
+}
+
+/* --------------------------------------------------------- */
+#services-section{
+
+}
+#services-section .content-services-1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 54px;
+}
+#services-section .content-services-1 .content-services-item-1{
+    /* border: 2px solid tomato; */
+    padding: 59px;
+
+}
+#services-section .content-services-1 .content-services-item-1 h6{
+    font-size: 12px;
+    /* margin: 23px; */
+    padding: 17px 17px;
+    font-family: 'Uchen', serif;
+}
+#services-section .content-services-1 .content-services-item-1 img{
+ 
+    height: 50px;
+    width: 50px;
+    transition: 1s linear;
+}
+#services-section .content-services-1 .content-services-item-1 img:hover{
+ 
+  transform: rotatey(360deg);
+}
+
+#services-section .content-services-2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* margin-top: 54px; */
+}
+#services-section .content-services-2 .content-services-item-2{
+    /* border: 2px solid tomato; */
+    padding: 63px;
+}
+#services-section .content-services-2 .content-services-item-2 h6{
+    font-size: 12px;
+    /* margin: 23px; */
+    padding: 17px 17px;
+    font-family: 'Uchen', serif;
+}
+#services-section .content-services-2 .content-services-item-2 img{
+ 
+    height: 50px;
+    width: 50px;
+    transition: 1s linear;
+}
+#services-section .content-services-2 .content-services-item-2 img:hover{
+ 
+  transform: rotateY(360deg);
+}
+#innovative-services-hov{
+    background: green;
+}
+#innovative-services-hov:hover{
+    background: rgb(79, 196, 79);
+    cursor: pointer;
+}
+#event-services-hov{
+    background: turquoise;
+}
+#event-services-hov:hover{
+    background: rgb(9, 146, 132);
+}
+#product-services-hov{
+    background: #848412;
+    
+}
+#product-services-hov:hover{
+    background: #dbdb8b;
+}
+#wedding-services-hov{
+    background: brown;
+}
+#wedding-services-hov:hover{
+    background: rgb(221, 130, 130);
+}
+#quiz-content-hov{
+    background:deepskyblue;
+}
+#quiz-content-hov:hover{
+    background:rgb(6, 105, 138);
+}
+#coperate-services-hov{
+    background: yellow;
+}
+#coperate-services-hov:hover{
+    background: rgb(214, 214, 139);
+}
+#product-launch-hov{
+    background: brown;
+}
+#product-launch-hov:hover{
+    background: rgb(224, 151, 151);
+}
+#collage-fest-event-hov{
+    background: lightskyblue;
+}
+#collage-fest-event-hov:hover{
+    background: rgb(160, 207, 236);
+}
+#road-show-hov{
+    background: lightgreen;
+}
+#road-show-hov:hover{
+    background: rgb(141, 199, 141);
+}
+#fashion-show-hov{
+    background: rgb(179, 34, 135);
+}
+#fashion-show-hov:hover{
+    background: rgb(235, 128, 203);
+}
+
+
+/* ------------------------------------------------------------------- */
+#about-us{
+    background: black;
+    margin-top: 100px;
+    height: 100%;
+}
+#about-us .container{
+    padding: 0px;
+    height: 761px;
+}
+#about-us .row{
+    display: flex;
+    margin-left: -1px;
+    margin-right: 60px;
+}
+#about-us .column{
+    max-width: 50%;
+    flex: 0 0 50%;
+}
+#about-us .about-img{
+    position: relative;
+    float: right;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+#about-us .about-img figure{
+    margin-bottom: 0px;
+}
+#about-us .about-img figure img{
+    max-width: none;
+}
+#about-us .coloumn .about-text{
+    margin-left: 68px; 
+    margin-top: 40px;
+}
+#about-us .coloumn .about-text .sec-title{
+
+}
+#about-us .coloumn .about-text .sec-title h6{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+#about-us .coloumn .about-text .sec-title h2{
+    color: white;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 73px;
+}
+#about-us .coloumn .about-text .sec-title span{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    color: tomato;
+}
+#about-us .about-text .sec-title h2::before{
+    position: absolute;
+    background: #fa334f;
+    content: '';
+    border: 0.001px solid tomato;
+    margin: 207px 0px;
+    width: 101px;
+
+}
+#about-us .coloumn .about-text p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin:0px -3px 1px 0px;
+}
+
+#read{
+    margin-top: 30px;
+}
+#about-us .coloumn .read-more{
+    border: 2px solid tomato;
+    font-size: 30px;
+    color: white;
+    padding: 11px 13px;
+    text-decoration: none;
+    background: tomato;
+}
+#about-us .coloumn .read-more:hover{
+    background: black;
+    color: tomato;
+}
+/* ------------------------------------------------------------ */
+
+#feedback{
+    margin-top: -1px;
+}
+#feedback::before{
+    background: url(feedback_1.jpg) no-repeat center center/cover;
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+#feedback .feedback-content{
+
+}
+#feedback .feedback-content-1{
+    position: relative;
+    
+}
+#feedback .feedback-content-1 h6{
+   letter-spacing: 5px;
+   text-align: center;
+   font-size: 20px;
+   font-family: 'Poppins', sans-serif;
+   color: white;
+   padding-top: 11px;
+}
+
+#feedback .feedback-content-1 h2{
+    text-align: center;
+    position: relative;
+    font-size: 4vh;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding:11px;
+    color: white;
+    margin-left: 50px;
+}
+#feedback .feedback-content-1 h2::before{
+    position: absolute;
+    /* background: tomato; */
+    height: 0px;
+    width: 8%;
+    border: 1px solid rgb(0, 0, 0);
+    content: "";
+    margin: 80px 0px 0px 160px;
+}
+#feedback .feedback-content-1 span{
+    color: tomato;
+    font-size: 5vh;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 2px;
+}
+#feedback .feedback-content-2{
+    margin-top: 50px;
+    text-align: center;
+}
+#feedback .feedback-content-2 h2{
+    color: white;
+    font-size: 18vh;
+}
+
+#feedback .feedback-content-3 p{
+    color: rgb(48, 36, 34);
+    margin: 0px 400px;
+    font-size: 3vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+#gallary{
+    margin-top: 106px;
+}
+#gallary::before{
+    content: "";
+    background: black;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+}
+#gallary .content{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 100px
+}
+#gallary .content h5{
+    color:white;
+    text-align: center;
+    letter-spacing: 9px;
+    padding: 10px 0px;
+    font-size: 2vh;
+    font-family: 'Poppins', sans-serif;
+}
+#gallary .content h2{
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 4vh;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+#gallary .content h2::before{
+    color: tomato;
+    position: absolute;
+    content: "";
+    border: 1px solid tomato;
+    height: 0px;
+    width: 95px;
+    margin: 60px 0px 0px 95px;
+
+}
+
+#newsletter{
+    margin-top: 69px;
+}
+#newsletter::before{
+    content: "";
+    position: absolute;
+    background: tomato;
+    height: 50%;
+    width: 100%;
+}
+#newsletter .content{
+    position: relative;
+    /* margin-left: 50px; */
+}
+#newsletter .content h2{
+    text-align: center;
+    padding: 71px 0px 0px 0px;
+    font-size: 1.9rem;
+    color: white;
+}
+#newsletter .content .form{
+    margin: 32px 0px 0px 415px;
+    padding: 2px 0px 0px 2px;
+    
+}
+#newsletter .content .form .inp{
+    font-size: 1.1rem;
+    margin: 5px;
+    padding: 3px;
+    background: rgb(255 117 92);
+    border: none;
+    line-height: 58px;
+    font-weight: 400;
+    display: inline-block;
+    width: 30%;
+    text-transform: none;
+    letter-spacing: 6px;
+    word-spacing: 2px;
+}
+#newsletter .content .form .btn{
+    font-size: 1.5rem;
+    margin: -4px 0px 0px 5px;
+    padding: 1px;
+    background: white;
+    border: none;
+    line-height: 51px;
+    font-weight: 400;
+    width: 15%;
+    color: tomato;
+}
+#newsletter .content .form .btn:hover{
+    background: tomato;
+    color: white;
+}
+
+/* -------------------------------------------------------------- */
+
+#contact-us{
+    margin: 127px 4px 4px 127px;
+}
+#contact-us .content{
+    padding: 13px 0px 0px 0px;
+    margin: 16px 16px 16px 16px;
+}
+#contact-us .content .contact-item-1{
+    
+}
+#contact-us .content .contact-item-1 h4{
+    font-size: 6vh;
+    font-weight: 600;
+    line-height: 85px;
+    color: #333333;
+    padding-bottom: 13px;
+}
+#contact-us .content form{
+   /* display: inline-block; */
+}
+#contact-us .content .row-clearflix{
+    display: flex;
+    flex-wrap: wrap;
+}
+#contact-us .content .row-clearflix-1{
+    height: 30px;
+    margin-right: 3px;
+    width: 30%;
+}
+#contact-us .content .row-clearflix-1 input, #contact-us .content .row-clearflix-2 input, #contact-us .content .row-clearflix-3 input, #contact-us .content .row-clearflix-4 textarea{
+    font-size: 4vh;
+    font-weight: 500;
+    line-height: 59px;
+    width: 100%;
+    height: 65px;
+    padding: 7px 1px 0px 3px;
+    margin: 1px 10px 1px 0px;
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+}
+#contact-us .content .row-clearflix-2{
+    margin-left: 41px;
+}
+#contact-us .content .row-clearflix-3{
+    margin-left: 41px;
+}
+#contact-us .content .row-clearflix-4{
+    width: 50%;
+    height: 300px;
+    margin-top: 10px;
+    resize: none;
+}
